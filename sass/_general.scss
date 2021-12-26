@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ff-primary;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
