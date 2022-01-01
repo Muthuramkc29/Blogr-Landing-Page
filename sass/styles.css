@@ -7,8 +7,16 @@
           box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  font-family: "Overpass", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body,
@@ -19,7 +27,113 @@ p {
   margin: 0;
 }
 
-.attribution {
-  text-align: center;
+.font-color-title {
+  font-weight: 600;
+  color: #1f3f5b;
+}
+
+.font-color-para {
+  color: #25252d;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+
+.font-color-footer {
+  color: #c8c8cb;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.mainHeader {
+  background-color: #ff8f70;
+  background-image: url(../images/bg-pattern-intro-mobile.svg);
+  background-position: center;
+  border-bottom-left-radius: 5rem;
+  background-position-x: center;
+}
+
+.mainHeader .mainHeader__brandName {
+  font-family: "Overpass", sans-serif;
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.mainHeader .mainHeader__bars {
+  color: white;
+}
+
+.mainHeader .container--mod {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.mainHeader .mainHeader__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+}
+
+.mainHeader .mainHeader__subtitle {
+  color: whitesmoke;
+  font-weight: 200;
+  max-width: 17rem;
+  letter-spacing: 0.1px;
+}
+
+.mainHeader .btn--text {
+  color: #ff3d54;
+  font-weight: 700;
+}
+
+.mainHeader .btn--white {
+  font-weight: 700;
+}
+
+.container--text {
+  font-family: "Overpass", sans-serif;
+  font-weight: bolder;
+  letter-spacing: -0.7px;
+}
+
+.container--text .tabSection__robust-content {
+  padding-bottom: 18rem;
+}
+
+.mobileSection {
+  font-family: "Overpass", sans-serif;
+  letter-spacing: -0.7px;
+  background-color: #3f4164;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  color: white;
+  position: relative;
+}
+
+.mobileSection .mobileSection__img {
+  position: absolute;
+  top: -40%;
+  left: 0;
+}
+
+.mobileSection .mobileSection__art-infra {
+  margin-top: 8rem;
+}
+
+.mobileSection .mobileSection__art-infra__title {
+  font-weight: 600;
+}
+
+.mobileSection .mobileSection__art-infra__para {
+  color: #c8c8cb;
+  letter-spacing: 1px;
+}
+
+.mainFooter {
+  background-color: #25252d;
+  color: white;
+  border-top-right-radius: 6rem;
 }
 /*# sourceMappingURL=styles.css.map */

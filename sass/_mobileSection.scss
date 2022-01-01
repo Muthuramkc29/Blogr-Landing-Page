@@ -1,0 +1,29 @@
+.mobileSection {
+    font-family: $ff-primary;
+    letter-spacing: -0.7px;
+    background-color: $very-dark-desaturated-blue;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    color: $white;
+    position: relative;
+
+    .mobileSection__img {
+        position: absolute;
+        top: -40%;
+        left: 0;
+    }
+
+    .mobileSection__art-infra {
+        margin-top: 8rem;
+
+        &__title {
+            font-weight: 600;
+        }
+
+        &__para {
+            color: $grayish-blue;
+            letter-spacing: 1px;
+        }
+    }
+}
+

@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    font-family: $ff-primary;
+    font-family: $ff-secondary;
 }
 
 body,
@@ -14,4 +22,21 @@ h2,
 h3,
 p {
     margin: 0;
+}
+
+.font-color-title {
+    font-weight: 600;
+    color: $very-dark-blue;
+}
+
+.font-color-para {
+    color: $very-dark-black-blue;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+.font-color-footer {
+    color: $grayish-blue;
+    font-weight: 300;
+    font-size: 0.9rem;
 }

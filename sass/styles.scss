@@ -36,4 +36,8 @@ $ff-primary : 'Overpass', sans-serif;
 $ff-secondary : 'Ubuntu', sans-serif;
 
 @import "general";
-@import "utils";
+@import "header";
+@import "tabSection";
+@import "mobileSection";
+@import "lapSection";
+@import "footer";
