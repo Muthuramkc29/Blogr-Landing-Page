@@ -1,9 +1,13 @@
+// Navbar-toggler, Background image, buttons pending (js)
+
+// Done for mobile (375px), desktop (1440px)
+
 .mainHeader {
     background-color: $very-light-red;
     background-image: url(../images/bg-pattern-intro-mobile.svg);
     background-position: center;
     border-bottom-left-radius: 5rem;
-    background-position-x: center;
+    background-size: cover;
 
     .mainHeader__brandName {
         font-family: $ff-primary;
@@ -11,6 +15,20 @@
         font-size: 1.9rem;
         font-weight: 600;
         letter-spacing: -0.4px;
+    }
+
+    .mainHeader__login {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: white;
+        font-weight: 700;
+    }
+
+    .mainHeader__signup {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: $light-red;
+        font-weight: 700;
     }
 
     .mainHeader__bars {
@@ -27,6 +45,7 @@
         font-size: 2.1rem;
         font-weight: bold;
         letter-spacing: -0.4px;
+        max-width: 19rem;
     }
 
     .mainHeader__subtitle {
@@ -34,6 +53,22 @@
         font-weight: 200;
         max-width: 17rem;
         letter-spacing: 0.1px;
+    }
+
+    @media (min-width: 768px) {
+        .mainHeader__title {
+            font-size: 3.5rem;
+            max-width: 100%;
+        }
+
+        .mainHeader__subtitle {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+
+        .mainHeader__brandName {
+            font-size: 2.8rem;
+        }
     }
 
     .btn--text {

@@ -2,8 +2,91 @@
     font-family: $ff-primary;
     font-weight: bolder;
     letter-spacing: -0.7px;
+    position: relative;
 
-    .tabSection__robust-content {
-        padding-bottom: 18rem;
+    .tabSection__container__split {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .tabSection__container__split__content {
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+
+        .tabSection__extensible-editor {
+            padding-top: 2rem;
+
+            &__title {
+                margin-bottom: 2rem;
+                text-align: center;
+                margin-inline: 3rem;
+            }
+
+            &__para {
+                text-align: center;
+                margin-inline: 1rem;
+            }
+        }
+
+        .tabSection__robust-content {
+            padding-bottom: 14rem;
+    
+            &__title {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                text-align: center;
+                margin-inline: 3rem;
+            }
+
+            &__para {
+                text-align: center;
+                margin-inline: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .tabSection__container__split {
+            flex-direction: row;
+            justify-content: flex-start;
+            max-width: 45%;
+
+            &__img {
+                position: absolute;
+                top: 0;
+                right: -24%;
+            }
+
+            .tabSection__extensible-editor {
+    
+                &__title {
+                    text-align: left;
+                    margin-inline: 0;
+                    margin-bottom: 2rem;
+                    margin-left: 0.5rem;
+                }
+    
+                &__para {
+                    text-align: left;
+                }
+            }
+
+            .tabSection__robust-content {
+                padding-bottom: 18rem;
+        
+                &__title {
+                    text-align: left;
+                    margin-inline: 0;
+                    margin-bottom: 2rem;
+                    margin-left: 0.5rem;
+                }
+    
+                &__para {
+                    text-align: left;
+                }
+            }
+        }
     }
 }

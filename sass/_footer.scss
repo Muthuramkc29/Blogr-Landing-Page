@@ -2,4 +2,18 @@
     background-color: $very-dark-black-blue;
     color: $white;
     border-top-right-radius: 6rem;
+
+    .footer__split {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media (min-width:768px) {
+        .footer__split {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }

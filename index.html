@@ -25,44 +25,53 @@
 
   <header class="mainHeader">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light pt-4 mx-1">
-      <div class="container">
-        <!-- navbar brand / title -->
-        <a class="navbar-brand">
-          <span>
-            <p class="d-inline mainHeader__brandName">Blogr</p>
-          </span>
-        </a>
-        <!-- toggle button for mobile nav -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse justify-content-start" id="main-nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Connect</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light pt-4 mx-1">
+        <div class="container align-items-center">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand">
+            <span>
+              <p class="d-inline mainHeader__brandName">Blogr</p>
+            </span>
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-start align-items-center" id="main-nav">
+            <ul class="navbar-nav ps-4 pt-1">
+              <li class="nav-item">
+                <a class="nav-link text-white px-3">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-3">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-3">Connect</a>
+              </li>
+            </ul>
+          </div>
 
-    <!-- Header-intro goes here -->
-    <div class="container d-flex flex-column justify-content-center align-items-center container--mod">
-      <h3 class="text-center text-white pt-5 mx-4 mainHeader__title">A modern publishing platform</h3>
-      <p class="text-center pt-3 mainHeader__subtitle">Grow your audience and build your online brand</p>
-      <div class="d-flex justify-content-center pt-5 pb-5 gap-3">
-        <div class="btn rounded-pill bg-white py-2 px-3 btn--text">Start for Free</div>
-        <div class="btn rounded-pill border-white py-2 px-3 text-white btn--white">Learn More</div>
+          <div class="d-none d-md-block justify-content-end">
+            <a class="px-2 mainHeader__login" href="">Login</a>
+            <a class="px-4 py-2 bg-white rounded-pill mainHeader__signup" href="">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header-intro goes here -->
+      <div class="container container--mod">
+        <div class="d-flex flex-column justify-content-center align-items-center container__split">
+          <h3 class="text-center text-white pt-5 mainHeader__title">A modern publishing platform</h3>
+          <p class="text-center pt-3 mainHeader__subtitle">Grow your audience and build your online brand</p>
+          <div class="d-flex justify-content-center pt-5 pb-5 gap-3">
+            <div class="btn rounded-pill bg-white py-2 px-3 btn--text">Start for Free</div>
+            <div class="btn rounded-pill border-white py-2 px-3 text-white btn--white">Learn More</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -70,96 +79,108 @@
 
   <!-- TabSection goes here -->
   <section class="tabSection pt-5">
-    <div class="container pt-5 d-flex flex-column justify-content-center align-items-center container--text">
-      <h1 class="pb-5 tabSection__title font-color-title">Designed for the future</h1>
-      <div>
-        <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor-mobile">
-      </div>
-      <div class="tabSection__extensible-editor pt-5 mx-4 text-center">
-        <h1 class="mx-5 pb-3 font-color-title">Introducing an extensible editor</h1>
-        <p class="font-color-para">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-          change the looks of a blog.
-        </p>
-      </div>
-      <div class="tabSection__robust-content pt-5 mx-4 text-center">
-        <h1 class="mx-5 pb-3 font-color-title">Robust content management</h1>
-        <p class="font-color-para">Flexible content management enables users to easily move through posts. Increase the usability of your blog
-          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-        </p>
+    <div class="container container--text">
+      <h1 class="pb-4 pt-5 text-center font-color-title">Designed for the future</h1>
+      <div class="tabSection__container__split">
+        <div>
+          <img class="d-block d-md-none" src="./images/illustration-editor-mobile.svg" alt="illustration-editor-mobile">
+          <img class="d-none d-md-block tabSection__container__split__img" src="./images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+        </div>
+        <div class="tabSection__container__split__content">
+          <div class="tabSection__extensible-editor">
+            <h1 class="tabSection__extensible-editor__title font-color-title">Introducing an extensible editor</h1>
+            <p class="tabSection__extensible-editor__para font-color-para">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="tabSection__robust-content">
+            <h1 class="tabSection__robust-content__title font-color-title">Robust content management</h1>
+            <p class="tabSection__robust-content__para font-color-para">Flexible content management enables users to easily move through posts. Increase the usability of your blog
+              by adding customized categories, sections, format, or flow. With this opt functionality, you’re in full control.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- MobileSection goes here -->
   <section class="mobileSection py-5">
-    <div class="container pb-5 d-flex flex-column justify-content-center align-items-center">
-      <div>
-        <img class="img-fluid mobileSection__img" src="./images/illustration-phones.svg" alt="illustration-phones">
-      </div>
-      <div class="mobileSection__art-infra mx-4 text-center">
-        <h1 class="pt-2 pb-3 mobileSection__art-infra__title">State of the Art Infrastructure</h1>
-        <p class="mx-3 pb-2 mobileSection__art-infra__para"> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-        </p>
+    <div class="container py-3">
+      <div class="mobileSection__container__split">
+        <div>
+          <img class="img-fluid mobileSection__container__split__img" src="./images/illustration-phones.svg" alt="illustration-phones">
+        </div>
+        <div class="mobileSection__container__split__art-infra">
+          <h1 class="mobileSection__container__split__art-infra__title">State of the Art Infrastructure</h1>
+          <p class="mobileSection__container__split__art-infra__para"> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- LapSection goes here -->
-  <section class="lapSection py-4 pb-5">
-    <div class="container pt-5 d-flex flex-column justify-content-center align-items-center container--text">
-      <div>
-        <img src="./images/illustration-laptop-mobile.svg" alt="illustration-editor-mobile">
-      </div>
-      <div class="lapSection__free-open-simple pt-5 mx-4 text-center">
-        <h1 class="mx-4 pb-3 font-color-title">Free, open, simple</h1>
-        <p class="font-color-para">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-        </p>
-      </div>
-      <div class="lapSection__powerful-tooling pt-5 mx-4 text-center">
-        <h1 class="mx-5 pb-3 font-color-title">Powerful tooling</h1>
-        <p class="font-color-para pb-4">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-          capable of producing even the most complicated sites.
-        </p>
+  <section class="lapSection">
+    <div class="container container--text">
+      <div class="lapSection__container__split">
+        <div>
+          <img class="d-block d-md-none" src="./images/illustration-laptop-mobile.svg" alt="illustration-editor-mobile">
+          <img class="d-none d-md-block lapSection__container__split__img" src="./images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+        </div>
+        <div class="lapSection__container__split__content">
+          <div class="lapSection__container__split__Free">
+            <h1 class="lapSection__container__split__content__title font-color-title">Free, open, simple</h1>
+            <p class="lapSection__container__split__content__para font-color-para">Blogr is a free and open source application backed by a large community of helpful developers. It supports
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+          <div class="lapSection__container__split__powerful-tooling">
+            <h1 class="lapSection__container__split__content__title font-color-title">Powerful tooling</h1>
+            <p class="font-color-para">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer goes here -->
   <footer class="mainFooter">
-    <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
-      <h1 class="pt-4 pb-5">Blogr</h1>
-      <div class="mainFooter__product">
-        <h6 class="pt-4 pb-3 text-center">Product</h6>
-        <div class="d-flex flex-column justify-content-center align-items-center gap-1">
-          <p class="font-color-footer">Overwiew</p>
-          <p class="font-color-footer">Pricing</p>
-          <p class="font-color-footer">Marketplace</p>
-          <p class="font-color-footer">Features</p>
-          <p class="font-color-footer">Integrations</p>
+    <div class="container">
+      <div class="footer__split py-5">
+        <h1 class="pt-2 pb-5 text-center">Blogr</h1>
+        <div class="mainFooter__product py-2">
+          <h6 class="py-3">Product</h6>
+          <div class="d-flex flex-column justify-content-start align-items-center gap-1">
+            <p class="font-color-footer">Overwiew</p>
+            <p class="font-color-footer">Pricing</p>
+            <p class="font-color-footer">Marketplace</p>
+            <p class="font-color-footer">Features</p>
+            <p class="font-color-footer">Integrations</p>
+          </div>
         </div>
-      </div>
-
-      <div class="mainFooter__company py-3">
-        <h6 class="pt-4 pb-3 text-center">Company</h6>
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <p class="font-color-footer">About</p>
-          <p class="font-color-footer">Team</p>
-          <p class="font-color-footer">Blog</p>
-          <p class="font-color-footer">Careers</p>
+        <div class="mainFooter__company py-4">
+          <h6 class="pb-3">Company</h6>
+          <div class="d-flex flex-column justify-content-start align-items-center">
+            <p class="font-color-footer">About</p>
+            <p class="font-color-footer">Team</p>
+            <p class="font-color-footer">Blog</p>
+            <p class="font-color-footer">Careers</p>
+          </div>
         </div>
-      </div>
-
-      <div class="mainFooter__connect pb-4">
-        <h6 class="pt-4 pb-3 text-center">Connect</h6>
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <p class="font-color-footer">Contact</p>
-          <p class="font-color-footer">Newsletter</p>
-          <p class="font-color-footer">LinkedIn</p>
+        <div class="mainFooter__connect py-4">
+          <h6 class="pb-3">Connect</h6>
+          <div class="d-flex flex-column justify-content-start align-items-center">
+            <p class="font-color-footer">Contact</p>
+            <p class="font-color-footer">Newsletter</p>
+            <p class="font-color-footer">LinkedIn</p>
+          </div>
         </div>
       </div>
     </div>
