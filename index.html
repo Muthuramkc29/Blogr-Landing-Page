@@ -26,7 +26,7 @@
   <header class="mainHeader">
     <!-- navbar -->
     <div class="container">
-      <nav class="navbar navbar-expand-md navbar-light pt-4 mx-1">
+      <nav class="navbar navbar-expand-md navbar-dark pt-4 mx-1">
         <div class="container align-items-center">
           <!-- navbar brand / title -->
           <a class="navbar-brand">
@@ -35,7 +35,7 @@
             </span>
           </a>
           <!-- toggle button for mobile nav -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,15 +43,39 @@
           <!-- navbar links -->
           <div class="collapse navbar-collapse justify-content-start align-items-center" id="main-nav">
             <ul class="navbar-nav ps-4 pt-1">
-              <li class="nav-item">
-                <a class="nav-link text-white px-3">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white px-3">Company</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white px-3">Connect</a>
-              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">Pricing</a></li>
+                  <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                  <li><a class="dropdown-item" href="#">Features</a></li>
+                  <li><a class="dropdown-item" href="#">Integrations</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Careers</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Connect
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                  <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                </ul>
             </ul>
           </div>
 
