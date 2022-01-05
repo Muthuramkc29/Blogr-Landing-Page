@@ -3,19 +3,12 @@
 // Done for mobile (375px), desktop (1440px)
 
 .mainHeader {
-    background-color: $very-light-red;
-    background-image: url(../images/bg-pattern-intro-mobile.svg);
-    background-position: center;
+    background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(135deg, $very-light-red, $light-red);
+    background-size: 350%, 100%;
+    background-position: 35% 35%, 0% 0%;
+    // background-color: linear; - wrong
+    background-repeat: no-repeat, no-repeat;
     border-bottom-left-radius: 5rem;
-    background-size: cover;
-
-    .mainHeader__brandName {
-        font-family: $ff-primary;
-        color: $white;
-        font-size: 1.9rem;
-        font-weight: 600;
-        letter-spacing: -0.4px;
-    }
 
     .mainHeader__login {
         text-decoration: none;
@@ -44,7 +37,7 @@
         font-family: $ff-primary;
         font-size: 2.1rem;
         font-weight: bold;
-        letter-spacing: -0.4px;
+        letter-spacing: -0.5px;
         max-width: 19rem;
     }
 
@@ -56,8 +49,9 @@
     }
 
     @media (min-width: 768px) {
+
         .mainHeader__title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             max-width: 100%;
         }
 
@@ -78,5 +72,16 @@
 
     .btn--white{
         font-weight: 700;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainHeader {
+        background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(135deg, $very-light-red, $light-red);
+        background-size: 200%, 100%;
+        background-position: 20% 53%, 0% 0%;
+        // background-color: linear; - wrong
+        background-repeat: no-repeat, no-repeat;
+        border-bottom-left-radius: 5rem;
     }
 }

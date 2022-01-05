@@ -45,19 +45,11 @@ p {
 }
 
 .mainHeader {
-  background-color: #ff8f70;
-  background-image: url(../images/bg-pattern-intro-mobile.svg);
-  background-position: center;
+  background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(135deg, #ff8f70, #ff3d54);
+  background-size: 350%, 100%;
+  background-position: 35% 35%, 0% 0%;
+  background-repeat: no-repeat, no-repeat;
   border-bottom-left-radius: 5rem;
-  background-size: cover;
-}
-
-.mainHeader .mainHeader__brandName {
-  font-family: "Overpass", sans-serif;
-  color: white;
-  font-size: 1.9rem;
-  font-weight: 600;
-  letter-spacing: -0.4px;
 }
 
 .mainHeader .mainHeader__login {
@@ -87,7 +79,7 @@ p {
   font-family: "Overpass", sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
   max-width: 19rem;
 }
 
@@ -100,7 +92,7 @@ p {
 
 @media (min-width: 768px) {
   .mainHeader .mainHeader__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     max-width: 100%;
   }
   .mainHeader .mainHeader__subtitle {
@@ -119,6 +111,16 @@ p {
 
 .mainHeader .btn--white {
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .mainHeader {
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(135deg, #ff8f70, #ff3d54);
+    background-size: 200%, 100%;
+    background-position: 20% 53%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    border-bottom-left-radius: 5rem;
+  }
 }
 
 .container--text {
