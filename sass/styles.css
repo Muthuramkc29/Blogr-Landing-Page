@@ -64,6 +64,7 @@ p {
   font-size: 0.9rem;
   color: #ff3d54;
   font-weight: 700;
+  background-color: white;
 }
 
 .mainHeader .mainHeader__bars {
@@ -107,10 +108,27 @@ p {
 .mainHeader .btn--text {
   color: #ff3d54;
   font-weight: 700;
+  background-color: white;
+}
+
+.mainHeader .btn--text:hover {
+  color: white;
+  background-color: transparent;
 }
 
 .mainHeader .btn--white {
+  color: white;
   font-weight: 700;
+}
+
+.mainHeader .btn--white:hover {
+  color: #ff3d54;
+  background-color: white;
+}
+
+.mainHeader .mainHeader__signup:hover {
+  background-color: transparent;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -196,7 +214,7 @@ p {
   .container--text .tabSection__container__split__img {
     position: absolute;
     top: 0;
-    right: -24%;
+    left: 52.5%;
   }
   .container--text .tabSection__container__split .tabSection__extensible-editor__title {
     text-align: left;
@@ -249,7 +267,7 @@ p {
 
 .mobileSection .mobileSection__container__split__img {
   position: absolute;
-  top: -40%;
+  bottom: 60%;
   left: 0;
 }
 
@@ -361,7 +379,7 @@ p {
   .lapSection .lapSection__container__split__img {
     position: absolute;
     top: 0;
-    left: -25%;
+    right: 51.5%;
   }
   .lapSection .lapSection__container__split__content {
     padding-top: 11rem;
