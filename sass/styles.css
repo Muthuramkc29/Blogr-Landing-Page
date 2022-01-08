@@ -78,9 +78,9 @@ p {
 
 .mainHeader .mainHeader__title {
   font-family: "Overpass", sans-serif;
-  font-size: 2.1rem;
+  font-size: 2rem;
+  color: white;
   font-weight: bold;
-  letter-spacing: -0.5px;
   max-width: 19rem;
 }
 
@@ -141,6 +141,12 @@ p {
   }
 }
 
+.container--tab {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container--text {
   font-family: "Overpass", sans-serif;
   font-weight: bolder;
@@ -184,10 +190,6 @@ p {
   margin-inline: 1rem;
 }
 
-.container--text .tabSection__container__split .tabSection__robust-content {
-  padding-bottom: 14rem;
-}
-
 .container--text .tabSection__container__split .tabSection__robust-content__title {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -225,9 +227,6 @@ p {
   .container--text .tabSection__container__split .tabSection__extensible-editor__para {
     text-align: left;
   }
-  .container--text .tabSection__container__split .tabSection__robust-content {
-    padding-bottom: 18rem;
-  }
   .container--text .tabSection__container__split .tabSection__robust-content__title {
     text-align: left;
     margin-inline: 0;
@@ -239,6 +238,22 @@ p {
   }
 }
 
+@media (min-width: 768px) {
+  .container--tab {
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 991px) {
+  .container--tab {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .mobileSection {
   font-family: "Overpass", sans-serif;
   letter-spacing: -0.7px;
@@ -247,6 +262,8 @@ p {
   border-top-right-radius: 5rem;
   color: white;
   position: relative;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .mobileSection .mobileSection__container__split {
@@ -265,6 +282,12 @@ p {
           justify-content: center;
 }
 
+.mobileSection .mobileSection__container__split__empty {
+  border: 1px solid magenta;
+  width: 100%;
+  height: 20rem;
+}
+
 .mobileSection .mobileSection__container__split__img {
   position: absolute;
   bottom: 60%;
@@ -272,7 +295,7 @@ p {
 }
 
 .mobileSection .mobileSection__container__split__art-infra {
-  margin-top: 9rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
@@ -289,6 +312,14 @@ p {
 }
 
 @media (min-width: 768px) {
+  .mobileSection .phones-desktop-img {
+    width: 400px;
+    height: 400px;
+  }
+  .mobileSection .mobileSection {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .mobileSection .mobileSection__container__split {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,8 +328,14 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    max-width: 45%;
-    margin-left: auto;
+    max-width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
   }
   .mobileSection .mobileSection__container__split__img {
     position: absolute;
@@ -307,8 +344,8 @@ p {
   }
   .mobileSection .mobileSection__container__split__art-infra {
     margin-top: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     text-align: left;
   }
   .mobileSection .mobileSection__container__split__art-infra__title {
@@ -320,6 +357,76 @@ p {
     color: #c8c8cb;
     letter-spacing: 1px;
     margin-inline: 0;
+  }
+}
+
+.mob-div {
+  margin-top: 0;
+  border: 1px solid white;
+}
+
+.empty {
+  width: 300px;
+  height: 10rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty__img {
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 0;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .mobileSection {
+    margin-top: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .mobileSection__container__split__art-infra {
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: 4rem;
+  }
+  .mob-div {
+    position: relative;
+    margin-top: 11rem;
+  }
+  .empty {
+    position: absolute;
+    width: 50%;
+    left: 9%;
+  }
+  .empty__img {
+    width: 520px;
+    height: 520px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1190px) {
+  .mobileSection {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .mobileSection__container__split__art-infra {
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .empty {
+    position: absolute;
+    width: 50%;
+    top: 13%;
+    left: 5%;
+  }
+  .empty__img {
+    width: 420px;
+    height: 420px;
   }
 }
 
