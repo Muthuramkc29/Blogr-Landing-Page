@@ -1,7 +1,7 @@
 .mobileSection {
     font-family: $ff-primary;
     letter-spacing: -0.7px;
-    background-color: $very-dark-desaturated-blue;
+    background-image: linear-gradient($very-dark-gray-blue, $very-dark-desaturated-blue);
     border-bottom-left-radius: 5rem;
     border-top-right-radius: 5rem;
     color: $white;
@@ -56,10 +56,6 @@
         .mobileSection {
             padding-top: 0;
             padding-bottom: 0;
-        }
-
-        .empty__img-desktop {
-            
         }
 
         .mobileSection__container__split {
